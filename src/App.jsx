@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero";
 import Treatment from "./components/Treatment/Treatment";
 import Procedures from "./components/Procedures/Procedures";
 import About from "./components/About/About";
+import TestimonialSlider from "./components/TestimonialSlider/TestimonialSlider";
 import Team from "./components/Team/Team";
 import ContactForm from "./components/ContactForm/Contact";
 import Footer from "./components/Footer/Footer";
@@ -19,6 +20,9 @@ const App = () => {
       <img id="jasmine" src="public/images/jasmine.png" alt="Jasmine" />
       <About />
       <Treatment />
+      <Procedures />
+      <TestimonialSlider />
+      {/* <img id="quote" src="public/images/quote.png" alt="Quote" /> */}
       <Team />
       <ContactForm />
     </main>
