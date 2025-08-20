@@ -1,6 +1,6 @@
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import Services from "./components/Treatment/Treatment";
+import Treatment from "./components/Treatment/Treatment";
 import Procedures from "./components/Procedures/Procedures";
 import About from "./components/About/About";
 import Team from "./components/Team/Team";
@@ -16,10 +16,9 @@ const App = () => {
       <Hero />
       <img id="leafpng" src="public/images/leaf.png" alt="Leaf Png" />
       <img id="chinarose" src="public/images/china-rose.png" alt="China Rose" />
-      <Services />
       <img id="jasmine" src="public/images/jasmine.png" alt="Jasmine" />
-      <Procedures /> 
       <About />
+      <Treatment />
       <Team />
       <ContactForm />
     </main>
