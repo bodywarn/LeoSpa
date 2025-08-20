@@ -1,0 +1,53 @@
+.header {
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-inline: 24rem;
+  display: flex;
+  align-items: end;
+  gap: 8rem;
+
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .logo-icon {
+      width: 90px;
+      height: auto;
+    }
+
+    .logo-text {
+      font-size: 20px;
+      font-weight: 600;
+      color: #333;
+    }
+  }
+
+  .nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+
+      li {
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 500;
+          color: #444;
+          text-transform: uppercase;
+          transition: color 0.3s ease;
+          font-family: "themify";
+
+          &:hover {
+            color: #e67e7e;
+          }
+        }
+      }
+    }
+  }
+}

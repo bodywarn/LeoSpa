@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "themify";
+  src: url("/public/Fonts/themify.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+// Spa girl logo
+#spapng {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+// LEAF LOGO PNG 
+#leafpng {
+  top: 15%;
+  z-index: 0;
+  position: absolute;
+}
+
+#chinarose {
+  position: absolute;
+  left: 15%;
+  width:  8rem;
+}
+
+#jasmine {
+  position: absolute;
+  z-index: -1;
+  right: 10%;
+  bottom: -20%;
+  width:  5.5rem;
+}
+

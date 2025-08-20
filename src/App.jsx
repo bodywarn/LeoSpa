@@ -1,25 +1,30 @@
-import React from "react";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import Services from "./components/Services/Services";
+import Services from "./components/Treatment/Treatment";
 import Procedures from "./components/Procedures/Procedures";
-import Testimonials from "./components/Testimonials/Testimonials";
+import About from "./components/About/About";
 import Team from "./components/Team/Team";
 import ContactForm from "./components/ContactForm/Contact";
 import Footer from "./components/Footer/Footer";
-z
+
 const App = () => {
   return (
     <>
-      <Header />
+    <Header />
+    <main>
+      <img id="spapng" src="public/images/spa.png" alt="Spa Logo" />
       <Hero />
+      <img id="leafpng" src="public/images/leaf.png" alt="Leaf Png" />
+      <img id="chinarose" src="public/images/china-rose.png" alt="China Rose" />
       <Services />
-      <Procedures />
-      <Testimonials />
+      <img id="jasmine" src="public/images/jasmine.png" alt="Jasmine" />
+      <Procedures /> 
+      <About />
       <Team />
       <ContactForm />
-      <Footer />
-    </>
+    </main>
+    <Footer />
+  </>
   );
 };
 
