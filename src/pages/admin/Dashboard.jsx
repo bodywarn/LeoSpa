@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-  import "../admin/styles/Dashboard.scss";
+import "../admin/styles/Dashboard.scss";
 import UserManager from "./Management/UserManager";
 
 export default function Dashboard() {
@@ -33,28 +33,39 @@ export default function Dashboard() {
 
       <div className="dashboard__tabs">
         <button
-          className={`dashboard__tab ${
-            activeTab === "users" ? "active" : ""
-          }`}
+          className={`dashboard__tab ${activeTab === "users" ? "active" : ""
+            }`}
           onClick={() => setActiveTab("users")}
         >
           Brugere
         </button>
         <button
-          className={`dashboard__tab ${
-            activeTab === "products" ? "active" : ""
-          }`}
-          onClick={() => setActiveTab("products")}
+          className={`dashboard__tab ${activeTab === "hero" ? "active" : ""
+            }`}
+          onClick={() => setActiveTab("hero")}
         >
-          Produkter
+          Hero
         </button>
         <button
-          className={`dashboard__tab ${
-            activeTab === "categories" ? "active" : ""
-          }`}
-          onClick={() => setActiveTab("categories")}
+          className={`dashboard__tab ${activeTab === "about" ? "active" : ""
+            }`}
+          onClick={() => setActiveTab("about")}
         >
-          Kategorier
+          About
+        </button>
+        <button
+          className={`dashboard__tab ${activeTab === "treatment" ? "active" : ""
+            }`}
+          onClick={() => setActiveTab("treatment")}
+        >
+          Treatment
+        </button>
+        <button
+          className={`dashboard__tab ${activeTab === "footer" ? "active" : ""
+            }`}
+          onClick={() => setActiveTab("footer")}
+        >
+          Footer
         </button>
       </div>
 

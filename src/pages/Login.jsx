@@ -32,7 +32,7 @@ export default function LoginPage() {
       if (data?.name) {
         setUserData(data);
         setError("");
-        navigate("/dashboard"); // ✅ send to dashboard
+        navigate("/dashboard"); 
       } else {
         setError("Brugernavn ikke fundet.");
         setUserData(null);
