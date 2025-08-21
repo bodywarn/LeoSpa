@@ -14,7 +14,7 @@ const Header = () => {
             <li><a href="#feature">Feature</a></li>
             <li><a href="#service">Service</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#login">Login</a></li>
+            <li><a href="/login">Login</a></li>
           </ul>
         </nav>
     </header>

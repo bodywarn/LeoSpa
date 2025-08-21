@@ -1,0 +1,97 @@
+.team {
+  text-align: center;
+  padding: 4rem 2rem;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    color: #777;
+    font-size: 0.95rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    position: relative;
+    max-width: 300px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  &__image-wrapper {
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+
+  &__info {
+    background: #fff;
+    padding: 1.2rem 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    margin: -40px auto 0;
+    max-width: 85%;
+    position: relative;
+    z-index: 2;
+    transform: scale(0.95);
+    transition: all 0.4s ease;
+  }
+
+  &__card:hover .team__info {
+    transform: scale(1) translateY(-20px);
+  }
+
+  &__info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.3rem;
+  }
+
+  &__info p {
+    font-size: 0.95rem;
+    color: #777;
+    margin-bottom: 0.8rem;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    transform: translateY(20px); 
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+
+  &__card:hover .team__social {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+
+  &__icon {
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
+  }
+}
