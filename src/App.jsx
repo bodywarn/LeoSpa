@@ -11,6 +11,10 @@ import TestimonialSlider from "./components/TestimonialSlider/TestimonialSlider"
 import Team from "./components/Team/Team";
 import Appointment from "./components/Appointment/Appointment";
 
+import Features from "./pages/features/features";
+import Recommendation from "./pages/recommendation/recommendation";
+import Service from "./pages/service/service";
+
 
 import Login from "./pages/Login"; 
 import Dashboard from "./pages/admin/Dashboard";
@@ -41,9 +45,17 @@ const App = () => {
   return (
     <Router>
       <Routes>
+        {/* Home Page */}
         <Route path="/" element={<FrontPage />} />
+
+        {/* Admin Routes */}
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
+
+        {/* Service Pages */}
+        <Route path="/features" element={<Features />} />
+        <Route path="/recommendation" element={<Recommendation />} />
+        <Route path="/service" element={<Service />} />
       </Routes>
     </Router>
   );
