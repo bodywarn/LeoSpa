@@ -14,6 +14,7 @@ import Appointment from "./components/Appointment/Appointment";
 import Features from "./pages/features/features";
 import Recommendation from "./pages/recommendation/recommendation";
 import Service from "./pages/service/service";
+import Contact from "./pages/contact/Contact";
 
 
 import Login from "./pages/Login"; 
@@ -56,6 +57,7 @@ const App = () => {
         <Route path="/features" element={<Features />} />
         <Route path="/recommendation" element={<Recommendation />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
